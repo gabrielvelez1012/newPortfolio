@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <div class="container-header">
+        <header>
+            <div class="logo">
+                <a href=""><img class="logo-type" src="img/academlo.png" width="200px" alt=""></a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">Inicio</a></li>
+                    <li><a href="#acercademi" onclick="seleccionar()">Acerca de mí</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">Skills</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">Curriculum</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">Portfolio</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!--Inicio-->
+    <section id="inicio" class="inicio">
+        <div class="container-banner">
+            <div class="img">
+                <img src="img/im.jpeg" alt="">
+            </div>
+            <h1>Gabriel Vélez</h1>
+            <h2>Tecnólogo en Análisis de Sistemas</h2>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </div>
+    </section>
+    <!--Fin inicio-->
+
+    <!--Seccion acerca de mí-->
+    <section id="acercademi" class="acercademi">
+        <div class="container-section">
+            <h2>Acerca de mí</h2>
+            <p><span>Hola, soy Gabriel Vélez</span>
+                Me considero una persona respetuosa, sociable con un poco de discresión, me gustan los nuevos retos y trabajar en equipo.
+            </p>
+            <div class="file">
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            <br>12-dic-1991
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            <br>0979533653
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            <br>elgato-1991@hotmail.es
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            <br>Santo Domingo - Ecuador
+                        </li>
+                    </ul>
+                </div>
+
+                <!--Seccion de pasatiempos-->
+                <div class="col">
+                    <h3>Pasatiempos</h3>
+                    <div class="container-pasatiempo">
+                        <div class="pasatiempo">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>Juegos</span>
+                        </div>
+                        <div class="pasatiempo">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>Music</span>
+                        </div>
+                        <div class="pasatiempo">
+                            <i class="fa-solid fa-dumbbell"></i>
+                            <span>Deporte</span>
+                        </div>
+                        <div class="pasatiempo">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>Viajar</span>
+                        </div>
+                        <div class="pasatiempo">
+                            <i class="fa-solid fa-book"></i>
+                            <span>Leer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button>
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+    <!--Fin Seccion acerca de mí-->
+
+    <!--Seccion Skills-->
+    <section class="skills" id="skills">
+        <div class="container-section">
+            <h2>Skills</h2>
+            <div class="file">
+                <div class="col">
+                    <h3>Technical skills</h3>
+                    <div class="skill">
+                        <span>JavaScripts</span>
+                        <div class="barra-skill">
+                            <div class="progress javascript">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progress htmlcss">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                        <span>ReactJs</span>
+                        <div class="barra-skill">
+                            <div class="progress reactjs">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                        <span>NodeJs</span>
+                        <div class="barra-skill">
+                            <div class="progress nodejs">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Professional skills-->
+                <div class="col">
+                    <h3>Professional skills</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progress comunicacion">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                        <span>Trabajo en equipo</span>
+                        <div class="barra-skill">
+                            <div class="progress trabajo">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progress creatividad">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                        <span>Compromiso</span>
+                        <div class="barra-skill">
+                            <div class="progress compromiso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                        <span>Responsabilidad</span>
+                        <div class="barra-skill">
+                            <div class="progress responsibily">
+                                <span>89%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--Seccion curriculum-->
+    <section id="curriculum" class="curriculum">
+        <div class="container-section">
+            <h2>Curriculum</h2>
+            <div class="file">
+                <div class="col left">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Developer Full Stack</h4>
+                        <span class="home">Academlo</span>
+                        <span class="date">2022-2023</span>
+                        <div class="conectori">
+                            <div class="circlei"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Tecnología en Análisis de Sistemas</h4>
+                        <span class="home">Instituto Superior Tecnológico Japón</span>
+                        <span class="date">2018-2021</span>
+                        <div class="conectori">
+                            <div class="circlei"></div>
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="col right">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Atención al cliente</h4>
+                        <span class="home">Ferretería el Colorado</span>
+                        <span class="date">2022-2023</span>
+                        <div class="conectord">
+                            <div class="circled"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Atención al cliente</h4>
+                        <span class="home">Ferricentro Las Delicias</span>
+                        <span class="date">2020-2021</span>
+                        <div class="conectord">
+                            <div class="circled"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--Seccion Portfolio-->
+    <section id="portfolio" class="portfolio">
+        <div class="container-section">
+            <h2>Portfolio</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/ejemplo1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Ecommerce</h3>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/ejemplo2.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Pokedex</h3>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/ejemplo3.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Ecommerce con Reactjs</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Seccion contacto-->
+    <section id="contacto" class="contacto">
+        <div class="container-section">
+            <h2>Contacto</h2>
+            <div class="file">
+                <!--Form-->
+                <div class="col">
+                    <input type="text" placeholder="Nombre">
+                    <input type="text" placeholder="Número de celular">
+                    <input type="text" placeholder="Correo electrónico">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar mensaje<i class="fa-regular fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!--Map-->
+                <div class="col">
+                    <img src="img/miUbi.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Santo Domingo
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen-button"></i>
+                                0989708097
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                elgato-1991@hotmai.es
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer>
+        <a href="#inicio" class="up">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
