@@ -647,6 +647,10 @@ footer .up{
     line-height: 50px;
     font-size: 18px;
 }
+.link_pokedex{
+    text-decoration: none;
+    
+}
 
 /*Responsividad*/
 @media screen and (max-width:980px){
