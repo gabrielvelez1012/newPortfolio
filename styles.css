@@ -139,6 +139,18 @@ h2 .title-academlo{
     max-width: 1100px;
     margin: auto;
 }
+
+.acerca-container{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+.centrar-acerca{
+    text-align: center;
+    width: 50%;
+}
+
 .acercademi h2{
     font-size: 48px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
